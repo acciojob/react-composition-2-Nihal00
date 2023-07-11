@@ -4,7 +4,7 @@ import Modal from "./Modal"
 
 const App = () => {
 
-  const [onClose, setOnClose] = useState(false);
+  const [onClose, setOnClose] = useState("");
   
   return (
     <div>
