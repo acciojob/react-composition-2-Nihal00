@@ -1,0 +1,7 @@
+.btn_active{
+    display: flex;
+}
+
+.btn_inactive{
+    display: none;
+}
