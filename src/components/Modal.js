@@ -2,7 +2,7 @@ import React from "react";
 
 const Modal = ({ onClose, setOnClose }) => {
   return (
-    <div>
+    <div onClick={() => setOnClose(false)}>
       {(onClose) ? <div>
         <button onClick={() => setOnClose(false)}>close</button>
         <p>This is the content of the modal</p>
