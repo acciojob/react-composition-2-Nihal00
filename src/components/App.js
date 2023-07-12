@@ -1,24 +1,20 @@
-import React, { useState } from "react";
+import React, { useState } from "react";  
 
-import Modal from "./Modal"
 
 const App = () => {
 
-  const [onClose, setOnClose] = useState("");
-  
+  const [onClose, setOnClose] = useState(false);
+
   return (
-    <div>
-        {/* Do not remove the main div */}
+      <div>
+        <button onClick={() => setOnClose(true)}>Show Modal</button>
+
         <div className="model-overlay">
-          <button onClick={() => setOnClose(true)}>Show Modal</button>
+          <button className="model-close" onClick={() => setOnClose(false)}>Close</button>
+          <p className="modal">This is the content of the modal</p>
         </div>
 
-        <Modal 
-          onClose = {onClose} 
-          setOnClose={setOnClose} 
-        />
-    </div>
+      </div>
+    
   )
 }
-
-export default App
