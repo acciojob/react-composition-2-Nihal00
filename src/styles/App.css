@@ -1,0 +1,11 @@
+.modal-overlay{
+    display: none;
+}
+
+.modal-close{
+    display: none;
+}
+
+.modal p{
+    display: flex;
+}
